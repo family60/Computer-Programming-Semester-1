@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Selectors</title>
+  
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            //   set a border of 3 pixels and solid red around all paragraphs 
+			
+			//$("p").css("border", "3px solid red");
+            //   same for all class "a" tags  
+		//	$(".a").css("border", "3px solid red");
+            //   same for all "example" identifiers 
+//$("#example").css("border", "3px solid red");
+            //   same for all class "b" paragraphs 
+			$("p.b").css("border", "3px solid red");
+        });
+    </script>
+</head>
+
+<body>
+    <h1> jQuery Selectors</h1>
+    <div id="content">
+
+        
+        <div id="example">
+            <p class="a">This is paragraph 1</p>
+            <p id="para1">This is paragraph 2</p>
+            <p class="b">This is paragraph 3</p>
+            <p id="para4" lang="en-us">This is paragraph 4</p>
+            <p id="para5" lang="en-gb">This is paragraph 5</p>
+		 </div>
+		 <p id="ronak" >Hello from ronak!!</p>
+    </div>
+</body>
+
+</html>

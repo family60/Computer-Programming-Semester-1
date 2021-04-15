@@ -1,0 +1,88 @@
+Converting from Base 10 to base 2 and vice versa
+------------------------------------------------
+
+Binary uses "0" and "1"
+unit for binary system is "bit", each digit is instead refered to as a bit, 4 bits is called a "nibble" and 8 bits is called (byte)
+a bit of 4 would have a maximum power of 3, for eg 2^3 is the largest power among that bit, and each bit after that would be a power less (2^3, 2^2, 2^1, 2^0)
+
+eg: 1010 = 1*2^3 + 0*2^2 + 1*2^1 + 1*2^0, 1010 = 8 + 0 + 2 + 0, 1010 = 10
+
+110011 = 32 + 16 + 0 + 0 + 2 + 1 = 51 (6 bits would have a maximum power of 5 so... 2^5, 2^4....)
+
+
+the least significant bit (LSB) is the bit with the power of 0
+the most significant bit (MSB) is the bit with the power of the maximum power
+
+eg: 111000 has a LSB of 0 and a MSB of 1
+
+0100101 has a LSB of 1 and MSB of 0 (this is because rather than the value the power creates, the LSB and MSB is determined based on the power itself)
+
+
+
+OS
+--
+
+The things the OS is responsible for are:
+1) Allocating resources (disk space, network bandwidth etc...)
+2) Managing Files
+3) Start, stop, control programs
+4) Provide a basic security system
+
+Unix was developed in the 1970s at the Bell labs.
+Unix was developed using the assembly language.
+Unix was developed at a very low cost
+
+Unix/Linux are popular because:
+-Multi-user Systems
+-Multi-tasking systems
+-portable 
+-The Linux OS is based on the C programming language
+-The inverted file system in Unix/Linux enforces basic permissions on different files/directories
+
+The original Unix OS was availible at low cost (not entirely free)
+
+In 1984 Linus Torvalds redeveloped the kernal of the Unix OS and released it for free under the General Public License (GPL)
+
+Putty
+-----
+
+Server name: munro.humber.ca
+username: blackboard unsername
+password: blackboard password
+
+command [options] [arguments]
+for eg: ls -l dir1
+mkdir dirt
+exit
+
+command: what to do
+option: how to do it (always has a dash next to it)
+argument: where to do it
+
+mkdir  <name> = make directory 
+cd <name> = access directory
+ls = list directory
+ls -l = list long directory
+ls -l <name> = list long specific directory
+
+to illustrate a path:
+eg: staff: / home / staff (the first backslash is root and every blackslash after that is a seperator)
+students: / home / students
+monette: / home / staff / monette
+
+The Linux File System is simular to an inverted tree: at the root we have root (/) 
+the directories you have to navigate through in order to reach a specific location is called a path
+An absolute path is from root to location (start to location)
+An relative path is from a specific location to another specific location (current location to location)
+
+
+
+
+
+
+
+
+
+
+
+

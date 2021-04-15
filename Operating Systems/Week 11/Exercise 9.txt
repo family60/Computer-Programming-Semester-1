@@ -1,0 +1,44 @@
+Kush Patel
+n01350301
+
+1
+	b. DOG
+	c. Shepard
+	d. MEMO="Meeting will be today at noon"
+	e. echo MEMO
+	f. echo $MEMO
+	   Meeting today will be at noon
+2
+	b. echo $X
+	   24
+	c. let Y=($X)+2*4
+	d. echo $Y
+	   32
+3
+	a. vi testscript.sh
+	c. chmod u+x testscript.sh
+	d. MY_VAR=2
+	e. testscript.sh
+	   
+	   ^(I see a blank line)
+	f. export MY_VAR
+	g. 2
+
+4. grep -i rtml0007 /etc/passwd
+   rtml0007:x:15885:503:Elmira Ghoulbeigi:/home/students/rtml0007:/bin/bash
+
+5. vi searchusername.sh
+   
+   #Author : Kush Patel
+   #running Instructions : searchusername.sh rtml0007
+   #purpose : To search based on what the user sends in as a parameter, in this case rtml0007
+
+   #search based on parameter 1 through file /etc/passwd
+   grep -i "$1" /etc/passwd
+   [esc]
+   [:wq]
+
+   chmod u+x searchusername.sh
+   searchusername.sh rtml0007
+   rtml0007:x:15885:503:Elmira Ghoulbeigi:/home/students/rtml0007:/bin/bash
+

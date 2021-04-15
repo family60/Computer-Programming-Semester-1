@@ -1,0 +1,21 @@
+1. Keyboard: STDIN (file descriptor: 0)
+	> used to provide the input
+2. Monitor: STDOUT (file descriptor: 1)
+	> the output is displayed
+3. Monitor: STDERR (file descripter: 2)
+	> the error is dsiplayed
+
+we can refer to (1,2,3) by using the file descriptors (0,1,2)
+
+redirection : to change the way you see things
+	> output redirection : changing the stdout to a file (>,>>,1>,1>>)
+	> input redirection : changing the stdin to get the input from a file
+			(<,0<, <<(SYMBOL)) "<<" : Here document; 
+	> error redirection: change the stderr to go to a file (2>, 2>>)
+	> redirection with standard output/error
+	if a command is invalid, the error should be redirected to a file
+					1>&2 : redirect the standard output to the error
+					2>&1 : redirect the standard error to the output
+
+if [-z $userString" ] ; then
+...

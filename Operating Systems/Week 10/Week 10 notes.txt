@@ -1,0 +1,70 @@
+vi
+-----------
+/[keyword]
+command  [Esc] n : next occurence
+command [Esc] N : previous occurence
+?[Keyword]
+          find the occurence prior to the
+          current line
+//        search for the previous keyword
+----------------------
+commands [Esc]
+  o : after the line that you are on
+  O : before the line that you are on  
+-------------------------
+Extended commads [Esc]
+:w -> write
+:wq -> write and quit vi
+---------------------
+character commands [Esc]:
+h : left
+l(lowercase elle): right
+k: up
+j: down
+----------------------
+cut command: dd
+paste command:
+    -p: after the current line
+    -P: before the current line
+------------------------
+delete command: dd
+---------------------
+copy command : yy
+paste : commands (p,P)
+---------------------
+command to join lines (J)
+
+
+vi continued...
+---------------
+
+vi is a text editor. vi is a modal editor:
+1. insert mode
+   esc : exit insert mode meaning you do not want to save but in face want to only leave the insert mode
+2. command mode
+   ZZ : exit from the editor
+   i : go from command mode to insert mode
+3. extended command mode
+   :w : to store changes made to the file
+   :wq : saves the changes and exit from the editor
+   :q : quits the editor (assuming all changes were stored)
+   :q! : quits the editor and idgnore the modifications
+
+when you enter vi, you are in the command mode.
+
+$ : move to the end of the current line
+0 : beginning of the current line
+b : back one word
+G : to the beginning of the last line
+---> <number>G : to the beginning of the <number>th line (for eg: 3G = to the beginning of the 3rd line)
+dd: will delete the current line
+---> <number>dd : will delete <number> lines starting from the current line
+u: undo
+
+to search: /<item> (all instances of <item> will be highlighted)
+---> n : to move the cursor to the next instance
+---> N : to move the cursor to the previous instance
+
+grep [options] <pattern> <filename> : will search for  the patterns/repeates specified in the file(s)
+
+

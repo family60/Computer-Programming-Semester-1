@@ -1,0 +1,56 @@
+kush patel
+n01350301
+CPAN-133-0NA
+
+1. the free software foundation is a non-profit organization that supports the free software movement. Linux
+is simular in the sense that linux was also made to provide a free software experience for every one who wants to
+use it, to use.
+
+2. the shell is a terminal type program that is used to encrypt online communications. The shell work with the
+kernel by interpreting commands send in by the user and processesing them so the kernal can execute the instructions
+
+3. Linux is writting in "C". Linux is popular because it's language has more complex code that can be written, meaning you can do more
+complex things.
+
+4. cd /bin/cat will not work as there is no directory called "cat" under directory "bin"
+
+5. folders /dev, /dev/null are used for disposing of unwanted output streams of a process or even a empty file
+for input streams. https://en.wikipedia.org/wiki/Null_device#targetText=Usage,with%20the%20Unix%20mv%20command.
+
+6. 
+
+	a. pwd
+
+	b. mkdir CPAN133Assignments
+
+	c. mkdir ./CPAN133Assignments/Assignment1
+
+ 	d. cd ./CPAN133Assignments/Assignment1
+	   touch a1file.txt
+
+	e. cat > a1file.txt
+	   Kush
+	   Patel
+
+	f. pwd
+	   /home/students/no1350301/CPAN133Assignments/Assignment1
+
+	g. cd ./CPAN133Assignments/Assignment1
+
+	h. date
+	   cat > date.txt
+	   Sat Sept 28 11:04:34 EDT 2019
+
+	i. ls ./Assignment1
+
+	j. rm *[1-2]
+
+	k. rm term-test*
+
+	l. mv ~ ./CPAN133Assignment/Assignment1
+
+7. mv ./its5101 ./courses
+
+
+
+

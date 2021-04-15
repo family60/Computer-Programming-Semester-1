@@ -1,0 +1,76 @@
+Permissions in Linux/Unix OS
+*****************************
+1. Every file on Linux has permissions
+2. Every file has an owner.
+3. The owner file can change the permissions on that file.
+     - r (read), w(write), x (execute)
+
+4. Regular files
+________________________
+-r: view content (cat, less, more)
+-w: modify the file content of the file (cat > file.name, vi file.name)
+-x: execute (running a c programming source code)
+
+5. directory
+_______________________________
+-x : cd the directory
+-r,x: list the content of the dir
+-w,x: create, remove files and, sub-directories
+
+6. people on a Linux system : owner, group, others
+
+7. you can modify permissions the chmod command : chmod [-options] arguments 
+(Octal, symbolic)
+     - octal representation  example : permissions for users are shown with values 0 to 7
+         0 : 000 : ---
+         1 : 001 : --x
+         2 : 010 : -w-
+         3 : 011 : -wx
+         4 : 100 : r--
+         5 : 101 : r-x
+         6 : 110 : rw-
+         7 : 111 : rwx
+       
+         sample.file : chmod 753 sample.file
+         -owner : read,write,execute
+         -group: read,execute
+         -others: write,execute
+
+        sample.file: chmod 370 sample.file
+            -owner take away read permission
+            -group : add write permission
+            -others: no permission
+
+8. Symbolic representation: 
+          permissions are represented by (r,w,x)
+          users: owner (u),group(g),others(o)
+          operations: add(+) , revoke(-),assign(=) 
+ 
+
+symbolic representation:
+READ (r)
+WRITE (w)
+EXECUTE (x)
+
+modify the permissions using the symbolic rep.
+(r,w,x)
+> user (u)
+> group (g)
+> others (o)
+> users, group and others (a)
+
+add permission (+)	chmod u+w <file name>
+revoke permission (-)	chmod g-w <file name>
+assign permission (=)
+
+ls -l -d <file/direcory name> : will list the information on the directory or file as well as their permissions
+-d : too see permissions for directories
+chmod: to change permissions
+
+
+sort : sorts the file a-z.
+sort -r : sorts the file z-a.
+sort <file name> > <file name> : sorts the contents of a file into another (also creates the file if it doesnt
+exist already).
+sort -r <file name> > <file name> : reverse sorts the contents of a file into another file (also creates the
+file if it doesnt exist already).

@@ -1,0 +1,24 @@
+1)
+
+B) first_name last_name middle_name
+
+C) ls: full_name?.txt: No such file or directory
+
+D) Full_name1.txt
+
+E) ls *[!characters]
+
+F) ls * [n-f]
+
+G) ls [a-z]*
+
+H) mv ./first_name ./myFile.txt
+
+I) rm ./Middle_name
+
+J) cd ~
+
+K)  mkdir ./exercise4dir/myfilesdir
+
+L) cd ./exercise4dir/myfilesdir
+   mv ~/exercise4dir/* .

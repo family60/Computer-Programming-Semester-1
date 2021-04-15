@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<style>
+			#para2{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> This is Javascript Function demo</h1>
+		<p id ="para1"> </p>
+		<p id ="result"> </p>
+		<button onclick="document.getElementById('para1').innerHTML=Date()">
+		Show me the Date Time		
+		</button>
+		<button onclick="this.innerHTML=Date()">
+		Change Caption		
+		</button>
+		<script>
+			var myDate = new Date();
+			document.write(" <br>Date is :" +myDate);
+			document.write(" <br>Date using tostring :" +myDate.toDateString());
+			document.write(" <br>Date using getfull year  :" +myDate.getFullYear());
+		</script>	
+		
+	</body>
+	
+</html>

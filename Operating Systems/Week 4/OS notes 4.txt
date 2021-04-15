@@ -1,0 +1,7 @@
+cp <source> <destination> : This is to copy and paste directories 
+cp <file> <destination> : This is to copy and paste files
+cp s<file> d<file> : This is to copy the contents of once file to another
+
+mv <source> <destination> : Move the file from one place to another and you can also rename files this way (as long as it's in the same directory)
+
+ambiguos file names - use spectial characters to group files based on their names

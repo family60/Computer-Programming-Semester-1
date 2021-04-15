@@ -1,0 +1,101 @@
+Kush Patel - no1350301
+
+a.
+cat > programmer
+101:Johnson:John:K:39000
+102:King:Mary:K:39800
+103:Brown:Gretchen:K:35000
+104:Adams:Betty:C:42000
+105:Utley:Amos:V:36000
+106:Wilson:Patricia:B:39000
+107:Culligan:Thomas:F:39000
+108:Mitchell:Hillary:N:32800
+109:Arbuckle:Margaret:F:46700
+110:Ford:Terrence:H:44700
+111:Greene:Sarah:L:41700
+112:Rose:Richard:P:40200
+113:Daniele:Akkab:S:30500
+114:Edwards:George:J:38500
+[control shift d]
+
+b.
+cat > project
+EA-100:1:Reservation Plus:110
+EA-100:1:Reservation Plus:103
+EA-100:1:Reservation Plus:107
+EA-100:1:Reservation Plus:109
+EA-101:2:Accounting-Renevues Version 4:105
+EA-101:2:Accounting-Renevues Version 4:112
+EA-102:4:Purchasing System:110
+EA-103:3:Personnel Evaluations:106
+WE-206:1:Reservations:102
+WE-207:4:Accounting - Basic:101
+WE-208:2:Executive-Decision-Maker:102
+NE-300:1:Region P & L:103
+NE-302:1:Housekeeping Logs:104
+NE-304:4:Maintance Logs:105
+[control shift d]
+
+c.
+cut -d: -f4 project | sort | uniq > t1
+cat t1
+101
+102
+103
+104
+105
+106
+107
+109
+110
+112
+
+d.
+cut -d: -f1 programmer | sort | uniq > t2
+cat t2
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+
+e.
+comm -3 t2 t1 > t3
+108
+111
+113
+114
+
+f.
+	1. sort programmer > t4
+	   cat t4
+	   101:Johnson:John:K:39000
+	   102:King:Mary:K:39800
+	   103:Brown:Gretchen:K:35000
+	   104:Adams:Betty:C:42000
+	   105:Utley:Amos:V:36000
+	   106:Wilson:Patricia:B:39000
+	   107:Culligan:Thomas:F:39000
+	   108:Mitchell:Hillary:N:32800
+	   109:Arbuckle:Margaret:F:46700
+	   110:Ford:Terrence:H:44700
+	   111:Greene:Sarah:L:41700
+	   112:Rose:Richard:P:40200
+	   113:Daniele:Akkab:S:30500
+	   114:Edwards:George:J:38500
+
+	2. join -t: t3 t4 > t5
+	   cat t5
+	   108:Mitchell:Hillary:N:32800
+	   111:Greene:Sarah:L:41700
+	   113:Daniele:Akkab:S:30500
+	   114:Edwards:George:J:38500

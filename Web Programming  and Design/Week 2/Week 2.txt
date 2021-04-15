@@ -1,0 +1,21 @@
+<html> : this will start a new doc type of html
+</<tag>> : a forward slash followed by anything will end that type of tag (for eg: </html> will end the doc type of html, </body> will end the body section etc.)
+<body> : a tag to start a body format
+<head> : a tag that will start a header 
+<title> : a tag thats used to name your tab/title your website
+<br> : will create a break line/end the line (allows you to not have to have all of your text on one line)
+<hr> : will make a horizontal line used for organization, make sure to play this tag under any <br> tags as it will look horrible if you do the <hr> tag about the <br> tag
+<p> : for making paragraphs, will also make a blank line above and below it for spacing (like a normal paragraph)
+<h1> : a tag with a certain size for its heading, these go: h1, h2, h3, h4, h5, and h6. h7 and above do not exist and will result in that line not printing
+<!-- : this is how to start a comment
+--> : this is how to end the comment
+<i> : this is how to turn the line into italic lettering (</i> to stop italics)
+<b> : this is how to turn the line into bold lettering (</b> to stop bolding)
+<strong> : is also bold
+<em>: is also italic
+<sub> : is make subscripts (for eg in chemistry)
+<sup> : is to make exponents ( for eg when writing the date, math etc.
+<q> : is to quote
+<ul> : to list in bullet points
+<ol> : to list in numbered
+<li> : list item

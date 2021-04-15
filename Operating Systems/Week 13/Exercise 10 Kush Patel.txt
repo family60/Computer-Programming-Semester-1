@@ -1,0 +1,84 @@
+1. vi exercise10.sh
+#!/bin/bash
+#purpose: to determine if a value is divisible by 5,6 or both
+#running instuctions : vi exercise10.sh <number>
+
+#initialization
+number=$1
+
+if [ $((number % 5)) -eq 0 ] ; then
+	#if number is divisble by 5, then print 
+	echo "Value is divisible by 5"
+elif [ $((number % 6)) -eq ] ; then
+	#if number is divisible by 6 then print
+	echo "Value is divisible by 6"
+
+elif [ ($((number % 5)) -eq 0) -a ($((number % 6)) -eq 0) ]
+	#if number is divisible by both 5 and 6, then print
+	echo "value is divisble by both 5 and 6"
+
+else
+	#if number is not divisible by 5 nor 6, print
+	echo "Value is not divisible by 5 nor 6"
+fi
+
+2 ( version 1). vi exersice10q2.sh
+
+#!/bin/bash
+#purpose: to recieve a string and if they match A B or C then print them back
+#running instructions : vi exercise10q2.sh <string>
+
+#initialization
+letter=$1
+
+if [ $letter -eq "A" ] ; then
+	#if letter is A, then print
+	echo "This is A"
+elif [ $letter -eq "B" ] ; then
+	#if letter is B, then print
+	echo "This is B"
+elif [ $letter -eq "C" ] ; then
+	#if letter is C, then print
+	echo "This is C"
+fi
+
+(version 2)
+#!/bin/bash
+#purpose: to recieve a integer and if they match 1 2 or 3 then print them back (using case logic)
+#running instructions : vi exercise10q2.sh <integer>
+
+#initialization
+number=$1
+
+case $number in #if number is equal too...
+	#1, print
+	"1") echo "this is 1";;
+	#2, print
+	"2") echo "this is 2";;
+	#3, print
+	"3") echo "this is 3";; 
+esac
+
+(version 3)
+#!/bin/bash
+#purpose: to recieve a string and if they match A B or C then print them back until empty string is inputted
+#running instructions : vi exercise10q2.sh <string>
+
+#initialization
+letter=$1
+
+if [ $letter -eq "A" ] ; then
+	#if letter is A, then print
+	echo "This is A"
+elif [ $letter -eq "B" ] ; then
+	#if letter is B, then print
+	echo "This is B"
+elif [ $letter -eq "C" ] ; then
+	#if letter is C, then print
+	echo "This is C"
+fi
+
+if [ $letter !-eq "" ] ; then
+	#if string is not empty, run program again
+	exercise10q2.sh 
+fi

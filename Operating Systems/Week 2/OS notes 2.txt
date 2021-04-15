@@ -1,0 +1,29 @@
+pwd - command that will show what your "present working directory" is, it will also sho what the absolute path is to the current directory you are on
+
+cd - change directory (to travel to another directory)
+things to note about cd:
+cd /bin (<---- regardless of what directory you are in now, it will take you to root ten bin)
+cd bin (<---- will only take you to bin if you are in root already, otherwise the command will not work)
+
+. (<---- means current position)
+cd . (<---- does nothing as you are telling the shell to stay in your current position)
+cd .. (<---- takes you to your parent directory, for eg: entering "cd .." while in "monette" it will take me to "staff"
+cd ~ (<---- "cd " will take you to YOUR home dirctory (under students), NOT to THE home directory)
+
+
+Q1) Assume you are under staff, write a command to:
+A) move to studends using absolute path
+B) move to students using relevant path
+c) move to root using relevant path
+
+A1) cd /home/students
+A2) cd ../students (<---- takes you to parent directory of staff which is home, then takes you to students)
+A3) cd ../.. (<---- takes you to parent directory of staff which is home and the parent directory of home which is root)
+
+
+(after making a testD directory in MY home directory and making dirA dirB dirC inside testD)
+ls -d -l testD (<----instead of listing the information inside of the directory, it lists the inforation about the directory testD itself
+
+cp <name> (<---- will copy the directory from the specified location and paste it to the current directory)
+
+mv <name> <new name> (<---- will rename directory)

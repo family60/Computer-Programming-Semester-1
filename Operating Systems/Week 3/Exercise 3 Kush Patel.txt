@@ -1,0 +1,32 @@
+Student name: Kush Patel
+Student number: n01350301
+Submission: Exercise 3
+Date: Setptember 18, 2019
+
+1.
+	1. Moving to home directory: cd ~
+
+	2. mkdir Dept_4540
+
+	3. cat > phones1.txt
+
+	4. cat > phones1.txt
+	   219:432:4567:Harrison:Joel
+           219:432:4587:Mitchell:Barbara
+           219:432:4567:Olson:Timothy
+
+	5. cd ~
+
+	6. mkdir Dept_4550
+           cat > phones2.txt
+	   219:432:4591:Moore:Sarah
+	   219:432:432:Polk:John
+	   219:432:4501:Robinson:Lisa
+
+	7. mkdir Corp_db
+
+	8. cp -r ./Dept_4540 ./Corp_db
+
+	9. cp -r ./Dept_4550 ./Corp_db
+
+	10. cat phones1.txt phones2.txt > Corp_phones

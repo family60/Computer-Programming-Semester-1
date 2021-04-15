@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<style>
+			#para2{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> This is Javascript Function demo</h1>
+		<p id ="para1"> </p>
+		<p id ="result"> </p>
+		<script>
+		var result=myMultiplyFunction(12,20);
+		
+		document.getElementById("para1").innerHTML="The result is: " + result;
+		function myMultiplyFunction(a,b){
+			return (a*b)
+		}
+		function convertToC(f){
+			return ((5/9) * (f-32));
+
+		}
+		var c= convertToC(100);
+		document.getElementById("result").innerHTML="The C is: " + c;
+		</script>	
+		
+	</body>
+	
+</html>

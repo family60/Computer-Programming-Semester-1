@@ -1,0 +1,49 @@
+Hard Link
+-------------------
+creation: ln name-of-file  name-of-link
+	- points to the inode of the file
+        - if the file is deleted the hard link would still be active
+        - if the file is changed the hard link would be UPDATED 
+	  (b/c pointing to to the inode)
+        - Applicable to files only
+        - Valid within the same file system
+
+Soft(Sym) Link
+-------------------
+creation: ln -s name-of-file  name-of-link 
+	 - is linking to the file name
+         - if the file is deleted/renamed the symbolic link would not be valid
+         - if the is changed the symbolic link will reflect the new content. 
+         - Applicable to files and directories
+         - valid across different file systems
+
+inode : a data structure representing a file on the disk 
+	   name, size, ...
+
+a hidden file is a file that is not visible to the user
+
+to create a hidden file, you will start it with a "."
+eg: touch .<file name>
+therefor : [ls -l] will not show hidden files, you must do [ls -l -a] to see all files
+
+Why make hidden files?:
+	1. security
+	2. cleanup the directory
+	3. backup
+
+
+Comparison operators
+--------------------
+
+(==, !=) : To compare strings
+-eq : equals
+-gt : greater than
+-lt : less than
+-ge: greater than or equal to
+-le : less than or equal to
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+groups of users on a linux operating system
+
+- owner: the person who created the file
+- group: a nuber of people who have similar permissions (permissions)
+- other: any one who isn't a member of the specified group
+
+
+types of permissions on a linux operating system:
+
+1. Read: to be able to read.
+2. Write: to be able to modify.
+3. Execute: to be able to execute (run).
+
+
+Regular file (text file):
+
+1. Read: view the content of the file.
+2. Write: modify the contents of the file.
+3. Execute: run the file.
+
+
+Directory:
+
+1. Read: the contents of a directory to be listed (both read and execute perms must be on).
+2. Write: modify the content of a directory.
+3. Execute: access or enter directories.
+
+
+more: view the content of a long file 
+less: view the contents of a long file
+both commands will show ten lines if desired number of lines is not specified
+
+
+
+

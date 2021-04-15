@@ -1,0 +1,47 @@
+1. The sed command is mainly used for text substitution. For example, you can sed <file name> and then
+perform tasks like find and replace, insertion, deletion, search and much more.
+
+2. The tr command is used to translate or tranliterate text. For example, you can choose to translate
+lower case to upper case by doing tr [:lower:] [:upper:]
+
+3. the tee command is used to read input and write it to both output and one or more files.
+for eg: tee -a file1.txt file2.txt
+
+4. mkdir CPAN133-Assignment3
+
+5. mkdir -p ./{prof-info,student-info}
+
+6. cd CPAN133-Assignment3
+
+7. touch -p professors.txt students.txt
+
+   vi professors.txt
+[i]
+professors.txt
+-------------
+Fujimara
+Bolosky
+Ribisi
+[:wq]
+   vi students.txt
+[i]
+Anderson
+Jones
+Hernandez
+[:wq]
+
+8. I did not use either, I chose to edit the files one by one as I can currently not login to the putty server
+due to password issues I am having with my humber account. Therefor, I am using the method I know off the top
+of my head and do not need a terminal to verify. ( Sorry :( )
+
+9. paste professors.txt students.txt | > prof-stu.txt
+
+10. sort prof-stu.txt | > sorted-prof-stu.txt
+
+11. mkdir academic-info
+
+12. mv ./sorted-prof-stu.txt ./academic-info
+
+13. cd ./CPAN133-Assignment3 | hlink link-academic-info ./academic-info/sorted-prof-stu.txt
+
+14.  cut -d: -f1 /etc/passwd | sort | > sortedPassword.txt

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script>
+			$("document").ready(function(){
+				$("#Wbutton").click(red);
+				$("#Dbutton").click(green);
+			});
+			function red (){
+				$("li[id=web]").css("background-color","red");
+			}
+			function green (){
+				$("li[id=database]").css("background-color","green");
+			}
+		</script>
+	</head>
+	<body> 
+		<h3>Humber college subjects</h3> 
+		<ul> 
+		<li id="web">HTML</li> 
+		<li id="web">CSS </li> 
+		<li id="web">JavaScript</li> 
+		<li id="web">jQuery</li> 
+		<li id="web">web</li> 
+		<li id="database">SQL</li> 
+		<li id="database"> PL/SQL</li> 
+		<li id="database">Oracle Form Builder</li> 
+		<li id="database">SQL tuning</li> 
+		</ul> 
+		<button id="Wbutton">Highlight Web Design</button> 
+		<button id="Dbutton">Highlight Database</button>
+	</body>
+</html>

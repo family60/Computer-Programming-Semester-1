@@ -1,0 +1,15 @@
+Directories - files which contain other files/directories
+Regular Files - will have some content (text, image, java etc)
+
+tree : will show the "tree" of the directories and files as well as their subdirectories
+
+-p : to make multiple directories inestead of having to make each one, one by one.
+
+touch <file name> : to create a file 
+cat <file name> : to view the contents of a file
+cat > <file name> : to modify content of a file, when you are done modifying, press "ctrl + shift + d" to finish editing
+file <file name> : will show what type of file it is
+rmdir <directory name> : will remove empty directories
+rm -r <directory name> : will remove directories that are not empty
+
+cp <file you want to copy> <destination you want it to go> : will copy the file specified and paste it to the location specified

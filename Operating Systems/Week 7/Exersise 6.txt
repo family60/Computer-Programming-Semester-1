@@ -1,0 +1,27 @@
+Kush Patel
+n01350301
+
+1. touch cat.txt
+	a) ls -l
+	b) read and write permissions (rw-)
+	c) students
+	d) owner has read and write permissions, group and others have no permissions
+
+2)
+	a) chmod u=rw cat.txt
+	b) chmod a=r cat.txt
+
+3)
+	1) ls -l /bin/bash
+		a)Read by all
+		b)Written by owner
+		c)Executable by all
+		d)rwxr-xr-x
+		e)755
+
+	2)ls -l /etc/shadow
+		a)Read by owner
+		b)Written by no one
+		c)Executable by no one
+		d)r--------
+		e)400

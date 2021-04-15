@@ -1,0 +1,75 @@
+Kush Patel
+n01350301
+
+1. compiler: A program that translate high level code to machine level so that it can be executed by the computer
+   interpreter: A program that is capable of exectuing a program 
+
+2. vi reverseOrder.sh
+
+#!/bin/bash
+#Purpose: To receive two arguements and print them back in reverse order
+#running instructions: reverseOrder.sh <num1> <num2>
+
+#if arg1 is empty, then print error msg
+if [$1 -eq 0] ; then 
+	echo "Not enough arguments"
+#if arg 2 is empty, then print error msg
+elif [$2 -eq 0] ; then
+	echo "Not enough arguments"
+#otherwise, print arg2 arg1
+else
+	echo $2 $1
+fi
+
+
+3. vi Factorial.sh
+#!/bin/bash
+#Purpose: To reveive an arguement and calculate the factorial of each positive integer
+#Running instuctions: Factorial.sh <num>
+
+#Variables for arg1 and the factorial for that arg
+num=$1
+Sum=0
+
+#keeps looping as long as arg is > 0
+while [num -gt 0] ; do
+	#get factorial and then deincriment
+	sum=$((sum * num))
+	num=$((num-1))
+done
+
+#print factorial
+echo $sum
+
+
+4. vi mathCalculator.sh
+#!/bin/bash
+#Purpose: To receive three arguements and find the result of the operations
+#running instuctions: MathCalculator.sh <num1> <x or %> <num2>
+
+#variable for arg2 (operator)
+operator=$2
+
+#if arg1 is empty, print error msg
+if [$1 -eq 0] ; then 
+	echo "Not enough arguments"
+#if arg 2 is empty, then print error msg
+elif [$2 -eq 0] ; then
+	echo "Not enough arguments"
+#if arg3 is empty, print error msg
+elif [$3 -eq 0] ; then 
+	echo "Not enough arguments"
+fi
+
+#if user inputs x (for multiplication)
+if [$2 -eq "x"] ; then
+	#print arg1 multiplied by arg3
+	echo $(($1*$3))
+#if user inputs % (for module)
+else [$2 -eq "%"] ; then
+	#print arg1 mod arg3
+	echo $(($1%$2))
+fi
+
+
+

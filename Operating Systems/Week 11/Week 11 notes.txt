@@ -1,0 +1,18 @@
+- Environment variables :
+           - equivalent to global variable in the C programming language
+                         - roughly equivalent to a static field variable in java
+           - valid for the current session
+           - set command : lists all the envorinment variables
+           - print the value of an env. variable: echo $VARIABLE_NAME
+             - PS1 : prompt string 1
+             - PS1=[\u@munro \W]\$
+           -PS2: prompt string 2
+           - to unset an envoronment variable:
+                      1. $VARIABLE_NAME=""
+                      2. unset VARIABLE_NAME
+           - positional parameters are used to print the parameters passed to a script
+               - $1 ..... $9
+               - ${} : ${11}  ---> parameter eleven
+               -$* : all the parameters passed to the script
+               -$#: number of parameters
+

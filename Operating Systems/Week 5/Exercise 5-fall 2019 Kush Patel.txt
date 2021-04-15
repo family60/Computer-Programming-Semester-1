@@ -1,0 +1,34 @@
+Kush Patel
+n01350301
+oct 2 2019
+
+1. The "more" command in UNIX is used for viewing the contents of a file or multiple files. This command also
+supports navigating forwards and backwards through a file.
+https://shapeshed.com/unix-more/#targetText=The%20more%20command%20is%20a,the%20contents%20of%20a%20file.
+
+2. The "less" command in UNIX is used to view the contents of a file just like the "more" command. However, 
+unlike the "more" command, this command has extended capability of allowing forward anf backwards navigation 
+thorugh the file.
+https://www.google.com/search?rlz=1C1CHBF_enCA862CA862&sxsrf=ACYBGNThLz3dARUg7PkLtQ1kxuyZ9tfoSQ%3A1570038474321&ei=yuKUXcGdE8TC-gScxKuwBQ&q=unix+what+is+the+less+command+used+for%3F&oq=unix+what+is+the+less+command+used+for%3F&gs_l=psy-ab.3...1132.2857..2964...0.2..0.139.906.0j7......0....1..gws-wiz.......0i71j0i8i30.G2F13_0hOVg&ved=0ahUKEwjBqq6Mkf7kAhVEoZ4KHRziClYQ4dUDCAs&uact=5
+
+3. The "file" command in UNIX is used to help classify the type of file mentioned. The command will output what 
+type it has been cassified as such as text file, html file, image file etc.
+https://www.computerhope.com/unix/ufile.htm
+
+4.
+	a. ls file* = file1 file11 file123 file1234 file23
+	   this command filtered out files "aa" and "aB" as they did not have the characters "file" in their name
+
+	b. ls *[a-z]* = aB aa file1 file11 file123 file1234 file23
+	   this commmand did non filter any files out as they all have characters with a-z in them
+
+	c. ls file??3 = file123
+	   this command filtered every file out except for "file123" as it had "file" in its name and "3" at the end
+
+	d. ls [file12]* = file1 file11 file123 file1234 file23
+	   this command filtered "aa" and "aB" out as they do not have any of the characters mention in the square
+	   brackets.
+
+	e. ls [!file]* = aB aa
+	   this command filtered out all files except "aB" and "aa" as they do not have any of the characters
+	   mentioned in the square breackets.

@@ -1,0 +1,6 @@
+Midterm
+--->Practical
+--->Knowledge
+
+Golbbing: Is the process of finding all the file names matching an ambiguous file name
+

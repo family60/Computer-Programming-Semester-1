@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<style>
+			#para2{
+				color:red;
+			}
+			#myArea{
+				border :2px solid black;
+				padding :5px;
+				margin :10px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<h1> This is Javascript Function demo</h1>
+		<p id ="para1"> </p>
+		<p id ="result"> </p>
+		<button onclick="document.getElementById('para1').innerHTML=Date()">
+		Show me the Date Time		
+		</button>
+		<button onclick="this.innerHTML=Date()">
+		Change Caption		
+		</button>
+		
+		<p id = "dateDisplay"></p>
+		<button onclick="myFunctionDate()">
+		myfunctionDate
+		</button>
+		<p id = "result" ></p>
+		<button onclick ="convertToC(100)">Convert To C</button>
+		<p id="myArea">
+			<img id ="img1" width="50px" height ="50px" >
+			<div id="myFname" ></div>
+			<div id = "myLname"> </div>
+		
+			<button onclick="displayImage()">Display Image</button>
+		</p>
+		<script>
+			
+			
+			function myFunctionDate(){
+				var myDate = new Date();
+				document.getElementById("dateDisplay").innerHTML=(" <br>Date is :" +myDate
+				+"<br>Date with DateString function is " +myDate.toDateString()+
+				"<br> Date with full year is " +myDate.getFullYear());
+			
+			}
+			function convertToC(f){
+				var result = ((5/9)*(f-32));
+				document.getElementById("result").innerHTML="The conversion is" + result;
+
+		}
+			function displayImage(){
+				document.getElementById("img1").src="puzzle.jpg";
+				document.getElementById("myFname").innerHTML="Ronak";
+				document.getElementById("myLname").innerHTML="Sheth";
+			}
+			/*function myFunction(a,b){
+				//document.getElementById("para2").innerHTML=("<br> Value is " +(a+b));
+				document.getElementById("para2").src="puzzle.jpg";
+			}*/
+		</script>	
+		
+	</body>
+	
+</html>
